@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Skyone architecture</title>
+        <script src="https://cdn.tailwindcss.com"></script>
+        <link href="https://fonts.googleapis.com/css2?family=Judson:wght@400;500;600;700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;600;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+           <script> tailwind.config = {
+              theme: {
+                extend: {
+                  fontFamily: {
+                    judson: ['Judson', 'sans-serif'],
+                    tajawal: ['Tajawal', 'sans-serif']
+                  },
+                  colors: {
+                        white: '#FFFFFF',
+                        black: '#000000'
+                    }
+                }
+              }
+            }
+          </script>
+          <style>
+    input:-webkit-autofill {
+      -webkit-box-shadow: 0 0 0px 1000px #ffffff inset;
+    }
+  </style>
+    </head>
+    <body>
+      <!-- Banner Section -->
+        <div class=" bg-cover bg-center h-[400px]" style="background-image: url('banner\ img.png');">
+          <div>
+            <ul class= "text-white text-[16px]  font-tajawal font-light uppercase flex justify-center gap-28 py-6"> 
+              <li class="hover:underline hover:underline-offset-8 hover:text-black p-1 rounded">Home</li>
+              <li class="hover:underline hover:underline-offset-8 hover:text-black p-1 rounded"><a href="index.html">About</a></li>
+              <li class="hover:underline hover:underline-offset-8 hover:text-black p-1 rounded"><a href="project.html">Project</a></li>
+              <li class="hover:underline hover:underline-offset-8 hover:text-black p-1 rounded"><a href="contact.html">Contact</a></li>
+            </ul>
+          </div>
+          <h1 class="text-white font-judson font-bold text-[64px] text-center pt-[100px]">About Skyone</h1>
+        </div>
+        <!-- Vision Section -->
+        <div class="mt-[150px] flex px-[266px]">
+          <div class="w-[400px] h-[500px] flex-shrink-0" style="background-image: url(vision-image.png);"></div>
+          <div class="flex-wrap">
+            <h1 class="text-black font-bold font-judson text-[36px] pt-[80px] pl-[32px]">VISION</h1>
+          <p class="text-black font-tajawal font-normal text-[16px] pt-[16px] pl-[32px]">We want to make buildings and spaces that are really cool to look at and work well too. We care a lot about helping the environment and making our customers super happy. Our goal is to work closely with the people we're building for, so we can turn their awesome ideas into big, famous buildings.</p>
+          </div>
+        </div>
+        <!-- About skyone architecture Section -->
+         <div class="mt-[150px] flex flex-row-reverse px-[80px]">
+          <div class="flex-wrap">
+          <div class="w-[218px] h-[350px] flex-shrink-0 ml-[24px]" style="background-image: url(about-skyone-architectures.png);"></div>
+          <div class="w-[74px] h-[72px] ml-[24px] mt-[18px]" style="background-image: url(shape-image.png);"></div>
+        </div>
+            <div class="w-[380px] h-[500px] flex-shrink-0" style="background-image: url(about-skyone-architectures.png);"></div>
+          <div class="flex-wrap">
+            <h1 class="text-black font-bold font-judson text-[36px] uppercase pt-[110px] pr-[40px]">About Skyone Architectures</h1>
+          <p class="text-black font-tajawal font-normal text-[16px] pt-[16px] pr-[40px]">Skyone Architectures, with a history of [number of years] years, excels in innovative and lasting architectural designs. Our skilled team emphasizes sustainability, creativity, and client collaboration, transforming ideas into enduring architectural masterpieces.
+          </p>
+          </div>
+        </div>
+        <!-- Founder's desk Section -->
+        <div class="mt-[150px] flex flex-row-reverse px-[80px]">
+          <div class="w-[760px] h-[500px] flex-shrink-0" style="background-image: url(founder-desk-image.png);"></div>
+          <div class="flex-wrap">
+            <h1 class="text-black font-bold font-judson text-[36px] pt-[223px] pr-[32px]">FOUNDER’S DESK</h1>
+          <p class="text-black font-tajawal font-normal text-[16px] pt-[16px] pr-[32px]">[Founder's Name], our firm's founder, is passionate about creating inspiring and beautiful spaces. Their experience shapes our unique design approach, driving us to turn each project into a work of art.
+          </p>
+          </div>
+        </div>
+         <!-- Footer Section -->
+         <div class="bg-cover bg-center h-fit bg-[#dbdbdb] mt-[150px] relative flex justify-center">
+         <div class=" w-1/2 px-[128px] py-[24px]">
+          <h1 class="text-black font-judson text-[60px] uppercase font-normal">skyone</h1>
+          <p1 class="text-black font-tajawal text-[16px] font-normal pt-[20px]">We design spaces that speak without words. Every line, every curve, every corner — intentional. Skyone is where bold ideas meet solid structures. Architecture that doesn't just exist, it inspires</p1>
+         <div class="flex mt-[24px] relative w-[314px] h-[48px] bg-white rounded-[20px] px-[16px]">
+          <input class="outline-none w-full pr-[40px]" type="email" placeholder="Enter Your E-mail"/>
+         <i class="active:scale-105 transition fa-regular fa-circle-right text-black text-[24px] absolute right-4 top-3"></i>
+        </div>
+      </div>
+        <div class="w-1/2 py-[24px]">
+          <H1 class="text-black font-tajawal text-[60px] font-light flex flex-wrap">Find your <span class="font-bold px-2"> way</span></H1>
+          <ul class= "text-black text-[16px]font-tajawal flex flex-col font-light gap-[8px]"> 
+              <li>Home</li>
+              <li>About</li>
+              <li>Project</li>
+              <li>Privacy policy</li>
+              <li>Terms & services</li>
+          </ul>
+          <div class="flex flex-wrap gap-[16px] mt-[16px]">
+            <i class="fa-brands fa-instagram text-black text-[24px]"></i>
+            <i class="fa-brands fa-whatsapp text-black text-[24px]"></i>
+          </div>
+          <img src="footer-image.svg" class="absolute bottom-0 right-0 w-[300px]"/>
+        </div>
+        </div>
+    </body>
+</html>

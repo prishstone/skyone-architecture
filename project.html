@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Skyone architecture</title>
+        <script src="https://cdn.tailwindcss.com"></script>
+        <link href="https://fonts.googleapis.com/css2?family=Judson:wght@400;500;600;700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;600;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+           <script> tailwind.config = {
+              theme: {
+                extend: {
+                  fontFamily: {
+                    judson: ['Judson', 'sans-serif'],
+                    tajawal: ['Tajawal', 'sans-serif']
+                  },
+                  colors: {
+                        white: '#FFFFFF',
+                        black: '#000000'
+                    }
+                }
+              }
+            }
+          </script>
+          <style>
+    input:-webkit-autofill {
+      -webkit-box-shadow: 0 0 0px 1000px #ffffff inset;
+    }
+  </style>
+    </head>
+    <body>
+      <!-- Banner Section -->
+        <div class=" bg-cover bg-center h-[400px]" style="background-image: url(project-banner.png);">
+          <div>
+            <ul class= "text-white text-[16px]  font-tajawal font-light uppercase flex justify-center gap-28 py-6"> 
+              <li class="hover:underline hover:underline-offset-8 hover:text-black p-1 rounded">Home</li>
+              <li class="hover:underline hover:underline-offset-8 hover:text-black p-1 rounded"><a href="index.html">About</a></li>
+              <li class="hover:underline hover:underline-offset-8 hover:text-black p-1 rounded"><a href="project.html">Project</a></li>
+              <li class="hover:underline hover:underline-offset-8 hover:text-black p-1 rounded"><a href="contact.html">Contact</a></li>
+            </ul>
+          </div>
+          <h1 class="text-white font-judson font-bold text-[64px] text-center pt-[100px]">Our projects</h1>
+        </div>
+        <!-- project Section -->
+        <div class="mt-[150px] flex-col flex px-[120px] gap-24">
+        <div class="relative group w-[500px]">
+            <img src="project-1.png" class="w-[500px] h-[500px]"/>
+            <div class="absolute top-0 left-0 w-[300px] h-full bg-black hidden group-hover:flex opacity-80 pt-[120px] px-[32px] gap-3 flex-col">
+                <h1 class="font-judson font-bold text-white text-[24px]">Solitude</h1>
+                <p1 class="font-tajawal font-normal text-white text-[16px]">Welcome to Gokhale Business Tower at J M Road, a truly modern business address that offers offices and showrooms for businesses with DNA in their growth.</p1>
+                <button class="active:scale-95 transition w-fit h-fit text-white border rounded-[10px] px-[16px] py-[8px]">View more</button>
+            </div>
+        </div>
+        <div class="relative group w-[500px] self-end overflow-hidden">
+            <img src="project-2.png" class="w-[500px] h-[500px]"/>
+            <div class="absolute top-0 right-0 w-[300px] h-full bg-black hidden group-hover:flex opacity-80 pt-[120px] px-[32px] gap-3 flex-col">
+                <h1 class="font-judson font-bold text-white text-[24px]">Solitude</h1>
+                <p1 class="font-tajawal font-normal text-white text-[16px]">Welcome to Gokhale Business Tower at J M Road, a truly modern business address that offers offices and showrooms for businesses with DNA in their growth.</p1>
+                <button class="active:scale-95 transition w-fit h-fit text-white border rounded-[10px] px-[16px] py-[8px]">View more</button>
+            </div>
+        </div>
+        </div>
+          <!-- Footer Section -->
+         <div class="bg-cover bg-center h-fit bg-[#dbdbdb] mt-[150px] relative flex justify-center">
+         <div class=" w-1/2 px-[128px] py-[24px]">
+          <h1 class="text-black font-judson text-[60px] uppercase font-normal">skyone</h1>
+          <p1 class="text-black font-tajawal text-[16px] font-normal pt-[20px]">We design spaces that speak without words. Every line, every curve, every corner — intentional. Skyone is where bold ideas meet solid structures. Architecture that doesn't just exist, it inspires</p1>
+         <div class="flex mt-[24px] relative w-[314px] h-[48px] bg-white rounded-[20px] px-[16px]">
+          <input class="outline-none w-full pr-[40px]" type="email" placeholder="Enter Your E-mail"/>
+         <i class="active:scale-105 transition fa-regular fa-circle-right text-black text-[24px] absolute right-4 top-3"></i>
+        </div>
+      </div>
+        <div class="w-1/2 py-[24px]">
+          <H1 class="text-black font-tajawal text-[60px] font-light flex flex-wrap">Find your <span class="font-bold px-2"> way</span></H1>
+          <ul class= "text-black text-[16px]font-tajawal flex flex-col font-light gap-[8px]"> 
+              <li>Home</li>
+              <li>About</li>
+              <li>Project</li>
+              <li>Privacy policy</li>
+              <li>Terms & services</li>
+          </ul>
+          <div class="flex flex-wrap gap-[16px] mt-[16px]">
+            <i class="fa-brands fa-instagram text-black text-[24px]"></i>
+            <i class="fa-brands fa-whatsapp text-black text-[24px]"></i>
+          </div>
+          <img src="footer-image.svg" class="absolute bottom-0 right-0 w-[300px]"/>
+        </div>
+        </div>
+    </body>
