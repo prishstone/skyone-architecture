@@ -32,12 +32,12 @@
     <body>
       <!-- Banner Section -->
         <div class=" bg-cover bg-center h-[400px]" style="background-image: url(project-banner.png);">
-          <div>
+           <div>
             <ul class= "text-white text-[16px]  font-tajawal font-light uppercase flex justify-center gap-28 py-6"> 
-              <li class="hover:underline hover:underline-offset-8 hover:text-black p-1 rounded"><a href="home.html">Home</a></li>
-              <li class="hover:underline hover:underline-offset-8 hover:text-black p-1 rounded"><a href="about.html">About</a></li>
-              <li class="hover:underline hover:underline-offset-8 hover:text-black p-1 rounded"><a href="project.html">Project</a></li>
-              <li class="hover:underline hover:underline-offset-8 hover:text-black p-1 rounded"><a href="contact.html">Contact</a></li>
+              <li id="nav-home" class="hover:underline hover:underline-offset-8 hover:text-black p-1 rounded"><a href="home.html">Home</a></li>
+              <li id="nav-about" class="hover:underline hover:underline-offset-8 hover:text-black p-1 rounded"><a href="about.html">About</a></li>
+              <li id="nav-project" class="hover:underline hover:underline-offset-8 hover:text-black p-1 rounded"><a href="project.html">Project</a></li>
+              <li id="nav-contact" class="hover:underline hover:underline-offset-8 hover:text-black p-1 rounded"><a href="contact.html">Contact</a></li>
             </ul>
           </div>
           <h1 class="text-white font-judson font-bold text-[64px] text-center pt-[100px]">Our projects</h1>
@@ -61,15 +61,17 @@
             </div>
         </div>
         </div>
-          <!-- Footer Section -->
+         <!-- Footer Section -->
          <div class="bg-cover bg-center h-fit bg-[#dbdbdb] mt-[150px] relative flex justify-center">
          <div class=" w-1/2 px-[128px] py-[24px]">
           <h1 class="text-black font-judson text-[60px] uppercase font-normal">skyone</h1>
           <p1 class="text-black font-tajawal text-[16px] font-normal pt-[20px]">We design spaces that speak without words. Every line, every curve, every corner — intentional. Skyone is where bold ideas meet solid structures. Architecture that doesn't just exist, it inspires</p1>
          <div class="flex mt-[24px] relative w-[314px] h-[48px] bg-white rounded-[20px] px-[16px]">
-          <input class="outline-none w-full pr-[40px]" type="email" placeholder="Enter Your E-mail"/>
-         <i class="active:scale-105 transition fa-regular fa-circle-right text-black text-[24px] absolute right-4 top-3"></i>
+          <input id="footer-email" class="outline-none w-full pr-[40px]" type="email" placeholder="Enter Your E-mail"/>
+         <i id="footer-btn" class="active:scale-105 transition fa-regular fa-circle-right text-black text-[24px] absolute right-4 top-3"></i>
         </div>
+        <div id="footer-toast" class="hidden fixed top-6 left-1/2 -translate-x-1/2 bg-black text-white px-6 py-3 rounded-full z-50">Thanks! We'll be in touch soon.</div>
+          <div id="toast-email" class="hidden fixed top-6 left-1/2 -translate-x-1/2 bg-red-500 text-white px-6 py-3 rounded-full z-50">Please enter a valid email!</div>
       </div>
         <div class="w-1/2 py-[24px]">
           <H1 class="text-black font-tajawal text-[60px] font-light flex flex-wrap">Find your <span class="font-bold px-2"> way</span></H1>
@@ -87,4 +89,37 @@
           <img src="footer-image.svg" class="absolute bottom-0 right-0 w-[300px]"/>
         </div>
         </div>
+        <script>
+  const page = window.location.pathname;
+  
+  if(page.includes('home')) document.getElementById('nav-home').classList.add('underline', 'underline-offset-8', 'font-bold');
+  if(page.includes('about')) document.getElementById('nav-about').classList.add('underline', 'underline-offset-8', 'font-bold');
+  if(page.includes('project')) document.getElementById('nav-project').classList.add('underline', 'underline-offset-8', 'font-bold');
+  if(page.includes('contact')) document.getElementById('nav-contact').classList.add('underline', 'underline-offset-8', 'font-bold');
+</script>
+<script>
+  document.getElementById('footer-btn').onclick = function() {
+  const email = document.getElementById('footer-email').value;
+
+  if(!email) {
+    const toastError = document.getElementById('toast-error');
+    toastError.classList.remove('hidden');
+    setTimeout(function() { toastError.classList.add('hidden'); }, 3000);
+    return;
+  }
+
+  if(!email.includes('@')) {
+    const toastEmail = document.getElementById('toast-email');
+    toastEmail.classList.remove('hidden');
+    setTimeout(function() { toastEmail.classList.add('hidden'); }, 3000);
+    return;
+  }
+
+  const footerToast = document.getElementById('footer-toast');
+  footerToast.classList.remove('hidden');
+  document.getElementById('footer-email').value = '';
+  setTimeout(function() { footerToast.classList.add('hidden'); }, 3000);
+}
+</script>
     </body>
+    </html>
