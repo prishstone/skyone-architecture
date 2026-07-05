@@ -1,189 +1,229 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Skyone architecture</title>
-        <script src="https://cdn.tailwindcss.com"></script>
-        <link href="https://fonts.googleapis.com/css2?family=Judson:wght@400;500;600;700&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;600;700&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
-           <script> tailwind.config = {
-              theme: {
-                extend: {
-                  fontFamily: {
-                    judson: ['Judson', 'sans-serif'],
-                    tajawal: ['Tajawal', 'sans-serif']
-                  },
-                  colors: {
-                        white: '#FFFFFF',
-                        black: '#000000'
-                    }
-                }
-              }
-            }
-          </script>
-          <style>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Skyone architecture</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Judson:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <script> tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            judson: ['Judson', 'sans-serif'],
+            tajawal: ['Tajawal', 'sans-serif']
+          },
+          colors: {
+            white: '#FFFFFF',
+            black: '#000000'
+          }
+        }
+      }
+    }
+  </script>
+  <style>
     input:-webkit-autofill {
       -webkit-box-shadow: 0 0 0px 1000px #ffffff inset;
     }
   </style>
-    </head>
-    <body>
-      <!-- Banner Section -->
-        <div class=" bg-cover bg-center h-[600px]" style="background-image: url(home-banner.png);">
-          <div>
-            <ul class= "text-white text-[16px]  font-tajawal font-light uppercase flex justify-center gap-28 py-6"> 
-              <li id="nav-home" class="hover:underline hover:underline-offset-8 hover:text-black p-1 rounded"><a href="home.html">Home</a></li>
-              <li id="nav-about" class="hover:underline hover:underline-offset-8 hover:text-black p-1 rounded"><a href="about.html">About</a></li>
-              <li id="nav-project" class="hover:underline hover:underline-offset-8 hover:text-black p-1 rounded"><a href="project.html">Project</a></li>
-              <li id="nav-contact" class="hover:underline hover:underline-offset-8 hover:text-black p-1 rounded"><a href="contact.html">Contact</a></li>
-            </ul>
-          </div>
-          <h1 class="text-black font-judson font-regular text-[80px] text-center pt-[80px]">Skyone</h1>
-        </div>
-        <!--breif section-->
-        <div class="mx-[40px] flex">
-            <div class="bg-white h-[230px] w-1/3 flex flex-col gap-3 shadow-[-20px_20px_20px_#00000025] items-left px-[40px] py-[40px]">
-                <h1 class="text-black text-[20px] font-judson font-bold">Spaces that define the future</h1>
-                <p class="text-black text-[14px] font-tajawal font-light">We believe that the built environment has the power to shape the way we live, work, and interact. Our commitment to creating these visionary spaces is driven by a fusion of innovation, sustainability, and functionality.</p>
-            </div>
-             <div class="bg-black h-[230px] w-1/3 flex flex-col gap-3 shadow-[0px_20px_20px_#00000025] items-left px-[40px] py-[40px]">
-                <h1 class="text-white text-[20px] font-judson font-bold">Tailored Design Solutions</h1>
-                <p class="text-white text-[14px] font-tajawal font-light">Our team's attention to detail and commitment to incorporating your input ensures that every project reflects your individual style and preferences.</p>
-            </div>
-             <div class="bg-white h-[230px] w-1/3 flex flex-col gap-3 shadow-[20px_20px_20px_#00000025] items-left px-[40px] py-[40px]">
-                <h1 class="text-black text-[20px] font-judson font-bold">Valuable community of happy families</h1>
-                <p class="text-black text-[14px] font-tajawal font-light">Our designs are not just about aesthetics and functionality; they are about fostering a sense of belonging and well-being. We understand that a home is more than just a structure; it's a place where memories are made, bonds are strengthened, and lives are enriched.</p>
-            </div>
-        </div>
-        <!--Achivement section-->
-        <div class="mx-[40px] flex gap-[40px] mt-[150px]">
-             <img src="home-sub-image.png" class="w-[430px]self-center">
-           <div class="flex gap-[40px] flex-1 items-center ">  
-             <div class="bg-white w-1/3 h-fill flex flex-col gap-3">
-                <h1 class="text-black text-[20px] font-judson font-normal text-center">Year of Leagcy</h1>
-                <p class="text-black text-[32px] font-tajawal font-medium text-center">10Yr</p>
-             </div>
-             <div class="bg-white w-1/3 h-fill flex flex-col gap-3">
-                <h1 class="text-black text-[20px] font-judson font-normal text-center">Completed Project</h1>
-                <p class="text-black text-[32px] font-tajawal font-medium text-center">5+</p>
-             </div>
-             <div class="bg-white w-1/3 h-fill flex flex-col gap-3">
-                <h1 class="text-black text-[20px] font-judson font-normal text-center">Valuable Resident</h1>
-                <p class="text-black text-[32px] font-tajawal font-medium text-center">10K+</p>
-             </div>
-           </div> 
-        </div>
-        <!--intro title-->
-          <div class="flex items-center gap-4 mt-[150px]">
-           <div class="h-[2px] bg-black w-[140px] opacity-40"></div>
-           <h1 class="text-black font-judson font-light text-[32px]">What we are<span class="font-bold px-2">is what we build</span></h1>
-          </div>
-          <!-- project 1 Section -->
-        <div class="mt-[150px] flex px-[180px]">
-              <div class="relative">
-               <div class="absolute -bottom-8 -left-8 w-[315px] h-[380px] border-b-2 border-l-2 border-black"></div>
-               <img src="home-pj1.png" class="w-[340px] h-[460px]">
-               </div>
-          <div class="flex-wrap w-[400px] mt-[70px] ml-[80px]">
-            <h1 class="text-black font-bold font-judson text-[36px] ">Residential Projects</h1>
-          <p class="text-black font-tajawal font-normal text-[16px] mt-[16px]">We understand that every residential project is a unique expression of the homeowner's vision, and our role is to bring that vision to life. Whether it's a cozy family home, a luxurious condominium, or a sustainable eco- friendly dwelling, we approach each project with creativity, innovation, and a deep understanding of spatial harmony.</p>
-          </div>
-        </div>
-          <!-- project 2 Section -->
-        <div class="mt-[80px] flex flex-row-reverse px-[180px]">
-              <div class="relative">
-               <div class="absolute -bottom-8 -right-8 w-[315px] h-[380px] border-b-2 border-r-2 border-black"></div>
-               <img src="home-pj2.png" class="w-[340px] h-[460px]">
-               </div>
-          <div class="flex-wrap w-[400px] mt-[70px] mr-[80px]">
-            <h1 class="text-black font-bold font-judson text-[36px] ">Commercial Projects</h1>
-          <p class="text-black font-tajawal font-normal text-[16px] mt-[16px]">We're committed to crafting environments that not only meet functional requirements but also elevate the overall atmosphere and identity of your commercial establishment. Whether it's designing cutting-edge office spaces that promote productivity and collaboration, creating inviting retail spaces that entice customers, or revitalizing existing commercial properties to meet modern standards, our team of experienced architects and designers is here to transform your vision into a reality.</p>
-          </div>
-        </div>
-          <!-- project 3Section -->
-        <div class="mt-[80px] flex px-[180px]">
-              <div class="relative">
-               <div class="absolute -bottom-8 -left-8 w-[315px] h-[380px] border-b-2 border-l-2 border-black"></div>
-               <img src="home-pj3.png" class="w-[340px] h-[460px]">
-               </div>
-          <div class="flex-wrap w-[400px] mt-[70px] ml-[80px]">
-            <h1 class="text-black font-bold font-judson text-[36px] ">Business Arcades</h1>
-          <p class="text-black font-tajawal font-normal text-[16px] mt-[16px]">We meticulously plan every detail, from the layout and furnishings to the lighting and decor, to ensure that the business arcade not only meets but exceeds the expectations of our clients. With a keen eye for modern trends and a commitment to sustainability, we transform ordinary spaces into dynamic and inviting corporate settings</p>
-          </div>
-        </div>
-        <!--outro title-->
-          <div class="flex flex-row-reverse items-center gap-4 mt-[150px]">
-           <div class="h-[2px] bg-black w-[140px] opacity-40"></div>
-           <h1 class="text-black font-judson font-light text-[32px]">Why<span class="font-bold px-2">choose us</span></h1>
-          </div>
-          <!--bento grid-->
-          <div class="grid grid-cols-3 gap-4 mt-[150px] mx-auto w-[900px] h-[800px]">
-                <div class="col-span-2 h-full w-full rounded-[20px] overflow-hidden"><img class="w-full h-full object-cover" src="bento-img-1.png"/></div>  
-               <div class="col-span-1 h-full w-full rounded-[20px] overflow-hidden"><img class="w-full h-full object-cover" src="bento-img-2.png"/></div>   
-                <div class="col-span-2 row-span-2 h-full w-full rounded-[20px] overflow-hidden"><img class="w-full h-full object-cover" src="bento-img-3.png"/></div>  
-              <div class="col-span-1 h-full w-full rounded-[20px] overflow-hidden"><img class="w-full h-full object-cover" src="bento-img-4.png"/></div>  
-             <div class="col-span-1 h-full w-full rounded-[20px] overflow-hidden"><img class="w-full h-full object-cover" src="bento-img-5.png"/></div>  
-         </div>
-        <!-- Footer Section -->
-         <div class="bg-cover bg-center h-fit bg-[#dbdbdb] mt-[150px] relative flex justify-center">
-         <div class=" w-1/2 px-[128px] py-[24px]">
-          <h1 class="text-black font-judson text-[60px] uppercase font-normal">skyone</h1>
-          <p1 class="text-black font-tajawal text-[16px] font-normal pt-[20px]">We design spaces that speak without words. Every line, every curve, every corner — intentional. Skyone is where bold ideas meet solid structures. Architecture that doesn't just exist, it inspires</p1>
-         <div class="flex mt-[24px] relative w-[314px] h-[48px] bg-white rounded-[20px] px-[16px]">
-          <input id="footer-email" class="outline-none w-full pr-[40px]" type="email" placeholder="Enter Your E-mail"/>
-         <i id="footer-btn" class="active:scale-105 transition fa-regular fa-circle-right text-black text-[24px] absolute right-4 top-3"></i>
-        </div>
-        <div id="footer-toast" class="hidden fixed top-6 left-1/2 -translate-x-1/2 bg-black text-white px-6 py-3 rounded-full z-50">Thanks! We'll be in touch soon.</div>
-          <div id="toast-email" class="hidden fixed top-6 left-1/2 -translate-x-1/2 bg-red-500 text-white px-6 py-3 rounded-full z-50">Please enter a valid email!</div>
+</head>
+
+<body>
+  <!-- Banner Section -->
+  <div class=" bg-cover bg-center h-[600px]" style="background-image: url(home-banner2.jpg);">
+    <div>
+      <ul class="text-white text-[16px]  font-tajawal font-light uppercase flex justify-center gap-28 py-6">
+        <li id="nav-home" class="hover:underline hover:underline-offset-8 hover:text-black p-1 rounded"><a
+            href="home.html">Home</a></li>
+        <li id="nav-about" class="hover:underline hover:underline-offset-8 hover:text-black p-1 rounded"><a
+            href="about.html">About</a></li>
+        <li id="nav-project" class="hover:underline hover:underline-offset-8 hover:text-black p-1 rounded"><a
+            href="project.html">Project</a></li>
+        <li id="nav-contact" class="hover:underline hover:underline-offset-8 hover:text-black p-1 rounded"><a
+            href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+    <h1 class="hidden font-judson font-regular text-[80px] text-left pl-[120px] pt-[80px]">Skyone</h1>
+  </div>
+  <!--breif section-->
+  <div class="mx-[40px] flex">
+    <div
+      class="bg-white h-[230px] w-1/3 flex flex-col gap-3 shadow-[-20px_20px_20px_#00000025] items-left px-[40px] py-[40px]">
+      <h1 class="text-black text-[20px] font-judson font-bold">Spaces that define the future</h1>
+      <p class="text-black text-[14px] font-tajawal font-light">We believe that the built environment has the power to
+        shape the way we live, work, and interact. Our commitment to creating these visionary spaces is driven by a
+        fusion of innovation, sustainability, and functionality.</p>
+    </div>
+    <div
+      class="bg-[#141414] h-[230px] w-1/3 flex flex-col gap-3 shadow-[0px_20px_20px_#00000025] items-left px-[40px] py-[40px]">
+      <h1 class="text-white text-[20px] font-judson font-bold">Tailored Design Solutions</h1>
+      <p class="text-white text-[14px] font-tajawal font-light">Our team's attention to detail and commitment to
+        incorporating your input ensures that every project reflects your individual style and preferences.</p>
+    </div>
+    <div
+      class="bg-white h-[230px] w-1/3 flex flex-col gap-3 shadow-[20px_20px_20px_#00000025] items-left px-[40px] py-[40px]">
+      <h1 class="text-black text-[20px] font-judson font-bold">Valuable community of happy families</h1>
+      <p class="text-black text-[14px] font-tajawal font-light">Our designs are not just about aesthetics and
+        functionality; they are about fostering a sense of belonging and well-being. We understand that a home is more
+        than just a structure; it's a place where memories are made, bonds are strengthened, and lives are enriched.</p>
+    </div>
+  </div>
+  <!--Achivement section-->
+  <div class="mx-[40px] flex gap-[40px] mt-[150px]">
+    <img src="home-sub-image.png" class="w-[430px]self-center">
+    <div class="flex gap-[40px] flex-1 items-center ">
+      <div class="bg-white w-1/3 h-fill flex flex-col gap-3">
+        <h1 class="text-black text-[20px] font-judson font-normal text-center">Year of Leagcy</h1>
+        <p class="text-black text-[32px] font-tajawal font-medium text-center">10Yr</p>
       </div>
-        <div class="w-1/2 py-[24px]">
-          <H1 class="text-black font-tajawal text-[60px] font-light flex flex-wrap">Find your <span class="font-bold px-2"> way</span></H1>
-          <ul class= "text-black text-[16px]font-tajawal flex flex-col font-light gap-[8px]"> 
-              <li>Home</li>
-              <li>About</li>
-              <li>Project</li>
-              <li>Privacy policy</li>
-              <li>Terms & services</li>
-          </ul>
-          <div class="flex flex-wrap gap-[16px] mt-[16px]">
-            <i class="fa-brands fa-instagram text-black text-[24px]"></i>
-            <i class="fa-brands fa-whatsapp text-black text-[24px]"></i>
-          </div>
-          <img src="footer-image.svg" class="absolute bottom-0 right-0 w-[300px]"/>
-        </div>
-        </div>
-        <script>
-       const page = window.location.pathname;
-         if(page.includes('home')) document.getElementById('nav-home').classList.add('underline', 'underline-offset-8', 'font-bold');
-         if(page.includes('about')) document.getElementById('nav-about').classList.add('underline', 'underline-offset-8', 'font-bold');
-         if(page.includes('project')) document.getElementById('nav-project').classList.add('underline', 'underline-offset-8', 'font-bold');
-         if(page.includes('contact')) document.getElementById('nav-contact').classList.add('underline', 'underline-offset-8', 'font-bold');
-        </script>
-        <script>
-  document.getElementById('footer-btn').onclick = function() {
-  const email = document.getElementById('footer-email').value;
+      <div class="bg-white w-1/3 h-fill flex flex-col gap-3">
+        <h1 class="text-black text-[20px] font-judson font-normal text-center">Completed Project</h1>
+        <p class="text-black text-[32px] font-tajawal font-medium text-center">5+</p>
+      </div>
+      <div class="bg-white w-1/3 h-fill flex flex-col gap-3">
+        <h1 class="text-black text-[20px] font-judson font-normal text-center">Valuable Resident</h1>
+        <p class="text-black text-[32px] font-tajawal font-medium text-center">10K+</p>
+      </div>
+    </div>
+  </div>
+  <!--intro title-->
+  <div class="flex items-center gap-4 mt-[150px]">
+    <div class="h-[2px] bg-black w-[140px] opacity-40"></div>
+    <h1 class="text-black font-judson font-light text-[32px]">What we are<span class="font-bold px-2">is what we
+        build</span></h1>
+  </div>
+  <!-- project 1 Section -->
+  <div class="mt-[150px] flex px-[180px]">
+    <div class="relative">
+      <div class="absolute -bottom-8 -left-8 w-[315px] h-[380px] border-b-2 border-l-2 border-black"></div>
+      <img src="home-pj1.png" class="w-[340px] h-[460px]">
+    </div>
+    <div class="flex-wrap w-[400px] mt-[70px] ml-[80px]">
+      <h1 class="text-black font-bold font-judson text-[36px] ">Residential Projects</h1>
+      <p class="text-black font-tajawal font-normal text-[16px] mt-[16px]">We understand that every residential project
+        is a unique expression of the homeowner's vision, and our role is to bring that vision to life. Whether it's a
+        cozy family home, a luxurious condominium, or a sustainable eco- friendly dwelling, we approach each project
+        with creativity, innovation, and a deep understanding of spatial harmony.</p>
+    </div>
+  </div>
+  <!-- project 2 Section -->
+  <div class="mt-[80px] flex flex-row-reverse px-[180px]">
+    <div class="relative">
+      <div class="absolute -bottom-8 -right-8 w-[315px] h-[380px] border-b-2 border-r-2 border-black"></div>
+      <img src="home-pj2.png" class="w-[340px] h-[460px]">
+    </div>
+    <div class="flex-wrap w-[400px] mt-[70px] mr-[80px]">
+      <h1 class="text-black font-bold font-judson text-[36px] ">Commercial Projects</h1>
+      <p class="text-black font-tajawal font-normal text-[16px] mt-[16px]">We're committed to crafting environments that
+        not only meet functional requirements but also elevate the overall atmosphere and identity of your commercial
+        establishment. Whether it's designing cutting-edge office spaces that promote productivity and collaboration,
+        creating inviting retail spaces that entice customers, or revitalizing existing commercial properties to meet
+        modern standards, our team of experienced architects and designers is here to transform your vision into a
+        reality.</p>
+    </div>
+  </div>
+  <!-- project 3Section -->
+  <div class="mt-[80px] flex px-[180px]">
+    <div class="relative">
+      <div class="absolute -bottom-8 -left-8 w-[315px] h-[380px] border-b-2 border-l-2 border-black"></div>
+      <img src="home-pj3.png" class="w-[340px] h-[460px]">
+    </div>
+    <div class="flex-wrap w-[400px] mt-[70px] ml-[80px]">
+      <h1 class="text-black font-bold font-judson text-[36px] ">Business Arcades</h1>
+      <p class="text-black font-tajawal font-normal text-[16px] mt-[16px]">We meticulously plan every detail, from the
+        layout and furnishings to the lighting and decor, to ensure that the business arcade not only meets but exceeds
+        the expectations of our clients. With a keen eye for modern trends and a commitment to sustainability, we
+        transform ordinary spaces into dynamic and inviting corporate settings</p>
+    </div>
+  </div>
+  <!--outro title-->
+  <div class="flex flex-row-reverse items-center gap-4 mt-[150px]">
+    <div class="h-[2px] bg-black w-[140px] opacity-40"></div>
+    <h1 class="text-black font-judson font-light text-[32px]">Why<span class="font-bold px-2">choose us</span></h1>
+  </div>
+  <!--bento grid-->
+  <div class="grid grid-cols-3 gap-4 mt-[150px] mx-auto w-[900px] h-[800px]">
+    <div class="col-span-2 h-full w-full rounded-[20px] overflow-hidden"><img class="w-full h-full object-cover"
+        src="bento-img-1.png" /></div>
+    <div class="col-span-1 h-full w-full rounded-[20px] overflow-hidden"><img class="w-full h-full object-cover"
+        src="bento-img-2.png" /></div>
+    <div class="col-span-2 row-span-2 h-full w-full rounded-[20px] overflow-hidden"><img
+        class="w-full h-full object-cover" src="bento-img-3.png" /></div>
+    <div class="col-span-1 h-full w-full rounded-[20px] overflow-hidden"><img class="w-full h-full object-cover"
+        src="bento-img-4.png" /></div>
+    <div class="col-span-1 h-full w-full rounded-[20px] overflow-hidden"><img class="w-full h-full object-cover"
+        src="bento-img-5.png" /></div>
+  </div>
+  <!-- Footer Section -->
+  <div class="bg-cover bg-center h-fit bg-[#dbdbdb] mt-[150px] relative flex justify-center">
+    <div class=" w-1/2 px-[128px] py-[24px]">
+      <h1 class="text-black font-judson text-[60px] uppercase font-normal">skyone</h1>
+      <p1 class="text-black font-tajawal text-[16px] font-normal pt-[20px]">We design spaces that speak without words.
+        Every line, every curve, every corner — intentional. Skyone is where bold ideas meet solid structures.
+        Architecture that doesn't just exist, it inspires</p1>
+      <div class="flex mt-[24px] relative w-[314px] h-[48px] bg-white rounded-[20px] px-[16px]">
+        <input id="footer-email" class="outline-none w-full pr-[40px]" type="email" placeholder="Enter Your E-mail" />
+        <i id="footer-btn"
+          class="active:scale-105 transition fa-regular fa-circle-right text-black text-[24px] absolute right-4 top-3"></i>
+      </div>
+      <div id="footer-toast"
+        class="hidden fixed top-6 left-1/2 -translate-x-1/2 bg-black text-white px-6 py-3 rounded-full z-50">Thanks!
+        We'll be in touch soon.</div>
+      <div id="toast-email"
+        class="hidden fixed top-6 left-1/2 -translate-x-1/2 bg-red-500 text-white px-6 py-3 rounded-full z-50">Please
+        enter a valid email!</div>
+    </div>
+    <div class="w-1/2 py-[24px]">
+      <H1 class="text-black font-tajawal text-[60px] font-light flex flex-wrap">Find your <span class="font-bold px-2">
+          way</span></H1>
+      <ul class="text-black text-[16px]font-tajawal flex flex-col font-light gap-[8px]">
+        <li>Home</li>
+        <li>About</li>
+        <li>Project</li>
+        <li>Privacy policy</li>
+        <li>Terms & services</li>
+      </ul>
+      <div class="flex flex-wrap gap-[16px] mt-[16px]">
+        <i class="fa-brands fa-instagram text-black text-[24px]"></i>
+        <i class="fa-brands fa-whatsapp text-black text-[24px]"></i>
+      </div>
+      <img src="footer-image.svg" class="absolute bottom-0 right-0 w-[300px]" />
+    </div>
+  </div>
+  <script>
+    const page = window.location.pathname;
+    if (page.includes('home')) document.getElementById('nav-home').classList.add('underline', 'underline-offset-8', 'font-bold');
+    if (page.includes('about')) document.getElementById('nav-about').classList.add('underline', 'underline-offset-8', 'font-bold');
+    if (page.includes('project')) document.getElementById('nav-project').classList.add('underline', 'underline-offset-8', 'font-bold');
+    if (page.includes('contact')) document.getElementById('nav-contact').classList.add('underline', 'underline-offset-8', 'font-bold');
+  </script>
+  <script>
+    document.getElementById('footer-btn').onclick = function () {
+      const email = document.getElementById('footer-email').value;
 
-  if(!email) {
-    const toastError = document.getElementById('toast-error');
-    toastError.classList.remove('hidden');
-    setTimeout(function() { toastError.classList.add('hidden'); }, 3000);
-    return;
-  }
+      if (!email) {
+        const toastError = document.getElementById('toast-error');
+        toastError.classList.remove('hidden');
+        setTimeout(function () { toastError.classList.add('hidden'); }, 3000);
+        return;
+      }
 
-  if(!email.includes('@')) {
-    const toastEmail = document.getElementById('toast-email');
-    toastEmail.classList.remove('hidden');
-    setTimeout(function() { toastEmail.classList.add('hidden'); }, 3000);
-    return;
-  }
+      if (!email.includes('@')) {
+        const toastEmail = document.getElementById('toast-email');
+        toastEmail.classList.remove('hidden');
+        setTimeout(function () { toastEmail.classList.add('hidden'); }, 3000);
+        return;
+      }
 
-  const footerToast = document.getElementById('footer-toast');
-  footerToast.classList.remove('hidden');
-  document.getElementById('footer-email').value = '';
-  setTimeout(function() { footerToast.classList.add('hidden'); }, 3000);
-}
-</script>
-    </body>
+      const footerToast = document.getElementById('footer-toast');
+      footerToast.classList.remove('hidden');
+      document.getElementById('footer-email').value = '';
+      setTimeout(function () { footerToast.classList.add('hidden'); }, 3000);
+    }
+  </script>
+</body>
+
 </html>
